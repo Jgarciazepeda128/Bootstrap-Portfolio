@@ -1,48 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Designer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <a class="navbar-brand" href="#home"><i class="fas fa-code"></i>My portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </div>
-</nav>
-<img src="Black  White Minimal Simple Handwritten  Dynamic Studio Logo.png" class="img-fluid" alt="...">
-<img src="Baller.jpg" class="img-fluid" alt="...">
-  <div class="card">
-  <div class="card-header">
-    Featured
+  <div class="hero-content">
+    <h1>Creative Web Designer</h1>
+    <p>Building beautiful, colorful, and engaging web experiences</p>
+    <div>
+      <a href="#projects" class="btn btn-light">View My Work</a>
+      <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+    </div>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">About me!!!!</h5>
-    <p class="card-text">Wassup i'm a 15 year old doing webdesign i try very hard on every design that i make i try to make it on point i always try to make it colorful and add as many images as i can for the audience can like it but on my free time i ball out in soccer and look for new things to do for my designs.</p>
-    <a href="#" class="btn btn-primary">Contact Me</a>
+
+
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Hi! I'm a Web Designer</h3>
+        <p>I'm a 15-year-old passionate web designer dedicated to creating stunning, colorful, and engaging designs that
+          captivate audiences.</p>
+        <p>When I'm not designing, you'll find me on the soccer field, continuously destroying kids my age on the field and my skills and exploring new
+          design trends and technologies.</p>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+      <div class="about-image">
+        <img src="Baller.jpg" alt="Profile"
+          onerror="this.src='https://via.placeholder.com/400x400/6366f1/ffffff?text=Profile'">
+      </div>
+    </div>
   </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <div class="project-image">Project 1</div>
+          <div class="card-body">
+            <h5 class="card-title">Emojis</h5>
+            <p class="card-text">A vibrant and colorful bunch of emojis</p>
+
+          </div>
+          <a href="https://jgarciazepeda128.github.io/emojis/" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+        <div class="project-image">Project 2</div>
+        <div class="card-body">
+          <h5 class="card-title">School Pro</h5>
+          <p class="card-text">A school schedule that directs me where to go and at what time</p>
+
+        </div>
+        <a href="https://jgarciazepeda128.github.io/school-pro/" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+      <div class="project-image">Project 3</div>
+      <div class="card-body">
+        <h5 class="card-title">Halloween-Animation</h5>
+        <p class="card-text">A spooky Halloween animation with vibrant colors and engaging visuals</p>
+
+      </div>
+      <a href="https://jgarciazepeda128.github.io/Halloween-Animation/" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+      <div class="project-image">Project 4</div>
+      <div class="card-body">
+        <h5 class="card-title">Infinity g37</h5>
+        <p class="card-text">A car that is fast and stylish for teenagers</p>
+
+      </div>
+      <a href="https://jgarciazepeda128.github.io/infiniti-g37/" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+      <div class="project-image">Project 5</div>
+      <div class="card-body">
+        <h5 class="card-title">Gone-For-Break</h5>
+        <p class="card-text">Winter break and nice and chilly</p>
+      </div>
+      <a href="https://jgarciazepeda128.github.io/Gone-for-Break/" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+      <div class="project-image"></div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+      </div>
+      <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
